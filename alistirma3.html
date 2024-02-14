@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+let sosyalDogru, sosyalYanlis=0;
+let turkceDogru, turkceYanlis=0;
+let okulPuani=0;
+
+let yeniSatir="\r\n";
+let mesaj="TYT TURKCE VE SOSYAL DERSİ İCİN PUAN HESAPLAMA" +yeniSatir
++"1-puan hesapla" +yeniSatir
++"2-çıkış yap";
+
+
+let secim=prompt(mesaj);
+
+switch(secim){
+    case "1": 
+    okulPuani=Number(prompt("okul puanınızı giriniz:"));
+    turkceDogru=Number(prompt("türkçe doğru sayısı:"));
+    turkceYanlis=Number(prompt("türkçe yanlış sayısı:"));
+    sosyalDogru=Number(prompt("sosyal doğru sayısı:"));
+    sosyalYanlis=Number(prompt("sosyal yanlış sayısı:"));
+
+    let dogruSayisi=turkceDogru+sosyalDogru;
+    let yanlisSayisi=turkceYanlis+sosyalYanlis;
+    let kalanDogruSayisi= dogruSayisi - (yanlisSayisi/4);
+    let puan=(kalanDogruSayisi*4)+okulPuani;
+
+    alert("tyt puanınız: "+puan);
+
+    break;
+
+    case "2":
+        alert("uygulamadan çıkış yapıldı!");
+    break;
+
+    default:
+        alert("lütfen geçerli aralıkta değer giriniz!");
+
+    break;
+}
+
+    </script>
+</body>
+</html>
