@@ -42,27 +42,27 @@ let tarih = "2022";
 // let sonuc = kurs.toLowerCase();
 // console.log(sonuc);
 
-//TRİM METOT  !! ÖNEMLİ BİR METOT: tüm space(boşluk) karakterlerini temizler.örneğin kullanıcı girişinde kullanıcı betül   oran yaptı trim ile
-//betül oran haline gelir gereksiz boşluklar temizlenir 
+//TRİM METOT  !! ÖNEMLİ BİR METOT: tüm space(boşluk) karakterlerini temizler. Örneğin kullanıcı girişinde kullanıcı betül   oran yaptı trim ile
+//betül oran haline gelir gereksiz boşluklar temizlenir. 
  //console.log(kurs.trim());
 
 
-//SLİCE METOT : belirlenen index aralıklarındaki keliemyi ve harfi ekrana yazdırır
+//SLİCE METOT : belirlenen index aralıklarındaki kelimeyi ve harfi ekrana yazdırır.
 // console.log(kurs);
 // console.log(kurs.slice(22,28));
 
 
-//SUBSTRİNG METOT : slice metodu gibidir
+//SUBSTRİNG METOT : slice metodu gibidir.
 // console.log(kurs);
 // console.log(kurs.substring(0,6));
 
 
-//REPLACE METOT : istediğin bir kelimeyi başka bir kelimeyle değiştirebilirsin 
+//REPLACE METOT : istediğin bir kelimeyi başka bir kelimeyle değiştirebilirsin.
 // console.log(kurs);
 // console.log(kurs.replace("Modern","Güncel"));
 
 
-//SPLİT METOT :bir metini istenilen şekilde parçalara bölerek bir dizi olarak geri döndürür
+//SPLİT METOT :bir metni istenilen şekilde parçalara bölerek bir dizi olarak geri döndürür.
 // console.log(kurs);
 // let dizi = kurs.split(",");
 // console.log(dizi);
