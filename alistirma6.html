@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+
+    //VERİLEN CÜMLEDEKİ HARF SAYISINI BULMA
+    
+    let cumle="Javascript öğreniyorum";
+
+    let harf=prompt("cümlede kaç kez olduğunu görmek istediğiniz harfi giriniz:");
+
+    harfBul(harf);
+    alert("istenen harfin sayısı: " +harfBul(harf));
+
+    function harfBul(harf){
+       let toplam=0;
+        for(let i=0; i<cumle.length;i++){
+            if(cumle.charAt(i)==harf){
+                toplam=toplam+1; 
+            }
+        }
+        return toplam; //return ün işlevi neydi hatırlayalım: 
+        // 1-bir değeri metodun dışına çıkarmak ve taşımak için.
+        // 2-bir metodu bitiren anahtar kelimedir.
+    }
+
+    </script>
+</body>
+</html>

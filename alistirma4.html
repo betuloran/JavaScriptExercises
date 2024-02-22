@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bir sayı, asal sayı mı değil mi bunu bulalım 
+       //bir sayının yarısına kadar döngüyü devam ettirsek ve asal olup olmadığına baktığımız sayıyı sürekli döngü içindeki i'lere bölersek asal
+       //olup olmadığını anlayabiliriz
+
+       let sayi=Number(prompt("bir sayı giriniz:"));
+       sonuc=true;
+       for(let i=2; i<=Math.floor(sayi/2);i++){
+    if(sayi%2==0){
+        sonuc=false;
+        alert("sayi asal değildir" +sayi);
+        break;
+    }
+    if(sonuc){
+    alert("sayi asaldir"+ sayi);
+    }
+       }
+
+    </script>
+</body>
+</html>
