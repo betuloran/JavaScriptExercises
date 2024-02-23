@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Pers(ad, saatucret) {
+            this.ad = ad;
+            this.saatucret = saatucret;
+            this.odeUcret = odeUcret;
+        }
+
+        function odeUcret(saat) {
+            return this.saatucret * saat;
+        }
+
+        pers1 = new Pers("Hasan", 50);
+        pers2 = new Pers("Berna", 40);
+        s1 = parseInt(window.prompt("birinci personelin calistigi saat miktari...", "0"))
+        p1 = pers1.odeUcret(s1);
+        s2 = parseInt(window.prompt("ikinci personelin calistigi saat miktari...", "0"))
+        p2 = pers2.odeUcret(s2);
+        document.write("<H3>Personelin Adi=" + pers1.ad + "</H3>");
+        document.write("<H3>Calistigi saat=" + s1 + "</H3>");
+        document.write("<H3>Saat Ucreti=" + pers1.saatucret + "</H3>");
+        document.write("<H3>Alacagi Maas=" + p1 + "</H3>");
+        document.write("<H3>Personelin Adi=" + pers2.ad + "</H3>");
+        document.write("<H3>Calistigi saat=" + s2 + "</H3>");
+        document.write("<H3>Saat Ucreti=" + pers2.saatucret + "</H3>");
+        document.write("<H3>Alacagi Maas=" + p2 + "</H3>");
+
+    </script>
+</body>
+
+</html>

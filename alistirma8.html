@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1--
+        //document.writeln("<font color='green'><h2>örnek <br> web sayfasi</h2></font>");
+
+        // 2--Web sayfasını oluşturan belge (document) yerine, bir pencere içine mesaj ya da bilgi yazdırılmak istenirse bu durumda
+        // window nesnesi ve bu nesne üzerinde geçerli olan alert metodu devreye sokulabilir.
+        // window.alert("21.10.2014\nİtü\nBilgisayar bölümü");
+
+        var fiyat, miktar, tutar, fiy, mik;
+        fiyat = window.prompt("fiyati giriniz..", "0");
+        miktar = window.prompt("miktari giriniz..", "0");
+        fiy = parseInt(fiyat);
+        mik = parseInt(miktar);
+        tutar = fiy * mik;
+        document.writeln("<h2>fiyat=" + fiyat + "</h2>");
+        document.writeln("<h2>miktar=" + miktar + "</h2>");
+        document.writeln("<h2>tutar=" + tutar + "</h2>");
+
+    </script>
+</body>
+
+</html>
