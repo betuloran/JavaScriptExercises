@@ -7,18 +7,21 @@
 //keyup : tuştan elini kaldırdığında çalışan eventtır.
 
 
-// document.addEventListener("keydown",run);
-
-// function run(e){
-//   console.log(e.keyCode);
+document.addEventListener("keypress",run);
+ function run(e){
+   console.log(e.type);
 //   if(e.keyCode ==116){
-//     alert("Sayfa yenileme engellendi!");
-//   }
-
+//     alert("Sayfa yenileme engellendi!");}
 //   e.preventDefault();
-// }
+ }
+
+ /*document.addEventListener("keypress",run);
+ function run(e){
+   console.log(e.key);
+ }*/
 
 
+/*
 const cardTitle = document.querySelectorAll(".card-title")[0];
 const input = document.querySelector("#todoName");
 
@@ -29,5 +32,5 @@ function run(e){
     cardTitle.textContent = e.target.value;
 }
 
-
+*/
 
