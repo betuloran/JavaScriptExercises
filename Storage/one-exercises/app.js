@@ -65,3 +65,6 @@
 // value.forEach(function(motion){
 //     console.log(motion);
 // });
+
+
+//Local Storage
