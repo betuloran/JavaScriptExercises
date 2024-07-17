@@ -84,7 +84,7 @@ function sumArrayValues(arr) {  //!!!!!!!!!!!!! ÖNEMLİ
     return sum;
 }
 
-let numbers = [1, 2, 3, 4, 5];          
+let numbers = [1, 2, 3, 4, 5];
 let result = sumArrayValues(numbers);
 console.log(result); // 15
 
@@ -102,8 +102,20 @@ function sumAllNums() { //Sonrasında da, arguments nesnesini kullanarak tüm ar
     }
     return sum
 }
-
 console.log(sumAllNums(1, 2, 3, 4)) // 10
 console.log(sumAllNums(10, 20, 13, 40, 10))  // 93
 console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
+
+//Arrow Function !!!!!! (ok fonksiyonu): Arrow işlevi, bir işlevi bildirmek için function anahtar sözcüğü yerine ok öğesini kullanır
+// Normal veya bildirim fonksiyonunu bu şekilde yazıyoruz :
+function squareTwo(n) {
+    return n * n
+}
+console.log(squareTwo(10)) //100
+
+//// Bu fonksiyonu bir ok fonksiyonuna dönüştürelim:
+const squareTheree = n => {
+    return n * n
+}
+console.log(squareTheree(2)) //4
 
