@@ -5,7 +5,7 @@
 const fonksiyon = number => number ** 2   // 2 kez üssünü al yani 3*3*3
 
 function cube(callback, number) { //callback ve number fonksiyonu alıyor
-    return callback(number) * number
+  return callback(number) * number
 }
 console.log(cube(fonksiyon, 3))
 
@@ -22,14 +22,28 @@ console.log(cube(fonksiyon, 3))
 //
 //   console.log(cube(callback, 3))
 
+
+console.log(a(5)(10)(20)) //35
+
 // Returning function: Geri dönüş fonksiyonu: Yüksek dereceli fonk.lar, fonksiyonu bir değer olarak döndürür.
 const higherOrder = n => {
-    const doSomething = m => {
-      const doWhatEver = t => {
-        return 2 * n + 3 * m + t
-      }
-      return doWhatEver
+  const doSomething = m => {
+    const doWhatEver = t => {
+      return 2 * n + 3 * m + t
     }
-    return doSomething
+    return doWhatEver
   }
-  console.log(higherOrder(2)(3)(10))  
+  return doSomething
+}
+console.log(higherOrder(2)(3)(10))  
+
+//örnek
+const a = s1 => {
+  const b = s2 => {
+    const c = s3 => {
+      return s1+s2+s3
+    }
+    return c
+  }
+  return b
+}
