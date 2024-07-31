@@ -38,12 +38,12 @@ const higherOrder = n => {
 console.log(higherOrder(2)(3)(10))  
 
 //örnek
-const a = s1 => {
-  const b = s2 => {
-    const c = s3 => {
-      return s1+s2+s3
-    }
-    return c
-  }
-  return b
-}
+// const a = s1 => {
+//   const b = s2 => {
+//     const c = s3 => {
+//       return s1+s2+s3
+//     }
+//     return c
+//   }
+//   return b
+// }
