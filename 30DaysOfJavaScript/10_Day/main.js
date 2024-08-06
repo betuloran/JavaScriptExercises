@@ -40,7 +40,7 @@ for (const company of companies1) { //for...of döngüsü kullanarak companies d
 }//çıktı: Set(5) {'Google', 'Facebook', 'Amazon', 'Oracle', 'Microsoft'}
 
 //Deleting an element a set - bir öğe kümesinin silinmesi: bir kümeden bir elemanı silme yöntemini kullanarak silebiliriz.
-console.log(companies.delete('Google')) 
+console.log(companies.delete('Google'))
 console.log(companies.size) // 4 elements left in the set
 
 //Checking an element in the set- kümedeki bir öğeyi kontrol etme (var mı yok mu diye-boolean değer)
@@ -57,19 +57,51 @@ let e = [3, 4, 5, 6]
 let f = [...d, ...e]
 
 let D = new Set(d)
-let E= new Set(e)
+let E = new Set(e)
 let F = new Set(f)
 
 console.log(F) // Set(6) {1,2,3,4,5,6}
 
 //İKİ KÜMENİN KESİŞİMİNİ BULMAK İÇİN SET KULLANILABİLİR: 
-let a = [1, 2, 3, 4, 5]
+let a = [1, 2, 3, 4, 5] //dizileri tanımlama
 let b = [3, 4, 5, 6]
 
-let A = new Set(a)
+let A = new Set(a) //set oluşturma
 let B = new Set(b)
 
-let c = a.filter((num) => B.has(num))
-let C = new Set(c)
+let c = a.filter((num) => B.has(num))//a dizisindeki her bir eleman (num) için, bu elemanın B setinde olup olmadığı kontrol edilir(B.has(num))
+let C = new Set(c) //Eğer num(sayı) B setinde bulunuyorsa num, c dizisine eklenir.
 
 console.log(C) //Set(3) {3, 4, 5}
+
+
+//MAP : 
+//Creating an Map from array -diziden map oluşturma
+countries = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo'],
+]
+const map = new Map(countries)
+console.log(map)      //Map(3) {"Finland" => "Helsinki", "Sweden" => "Stockholm", "Norway" => "Oslo"}
+console.log(map.size) //3
+
+//Adding values to the Map - map'e değer ekleme
+const countriesMap = new Map()
+console.log(countriesMap.size) // 0
+countriesMap.set('Finland', 'Helsinki')
+countriesMap.set('Sweden', 'Stockholm')
+countriesMap.set('Norway', 'Oslo')
+console.log(countriesMap) //Map(3) {"Finland" => "Helsinki", "Sweden" => "Stockholm", "Norway" => "Oslo"}
+console.log(countriesMap.size) //3
+
+//Getting a value from Map - map'ten değer alma
+console.log(countriesMap.get('Finland')) //Helsinki
+
+//Checking key in Map - map'te anahtar kontrol etme
+console.log(countriesMap.has('Finland'))//true
+
+//Getting all values from map using loop -Döngü kullanarak haritadan tüm değerleri alma
+for (const [country, city] of countriesMap){
+  console.log(country, city)
+ }
