@@ -36,11 +36,22 @@ console.log(rest)
 //ve bunları ayrı ayrı elemanlara ayırır.
 
 //Destructuring Object - nesneyi yok etme 
-const rectangle = {
-  width: 20,
-  height: 10,
-  area: 200
+const rectangle = {     // rectangle1 adında bir nesne tanımlanmıştır.
+  width: 20,           // width anahtardır 20 ise value(değer)
+  height: 10,          // height anahtardır  10 ise value(değer)
+  area: 200           // area anahtardır   200 ise value(değer)
 }
-let { width, height, area, perimeter } = rectangle //yapılandırma perimeter değişkeni ile bozuldu
+let { width, height, area, perimeter } = rectangle  //yapılandırma perimeter değişkeni ile bozuldu
+console.log(width, height, area, perimeter)  //20 10 200 undefined
 
-console.log(width, height, area, perimeter) //20 10 200 undefined
+//Anahtar nesnede bulunamazsa değişken tanımsız olarak atanacaktır. Bazen anahtar nesnenin içinde olmayabilir, 
+//bu durumda deklarasyon sırasında varsayılan bir değer verebiliriz:
+const rectangle2 = {
+  width1: 20,
+  height1: 10,
+  area1: 200
+}
+let { width1, height1, area1, perimeter1 = 60 } = rectangle2
+
+console.log(width1, height1, area1, perimeter1) //20 10 200 60
+//Let us modify the object:width to 30 and perimeter to 80
