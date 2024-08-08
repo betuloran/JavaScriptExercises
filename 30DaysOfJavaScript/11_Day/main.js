@@ -5,18 +5,18 @@
 const names = ['Asabeneh', 'Brook', 'David', 'John']
 let [firstPerson, secondPerson, thirdPerson, fourthPerson] = names
 
-console.log(firstPerson, secondPerson,thirdPerson, fourthPerson) //Asabeneh Brook David John
+console.log(firstPerson, secondPerson, thirdPerson, fourthPerson) //Asabeneh Brook David John
 
 const fullStack = [
-    ['HTML', 'CSS', 'JS', 'React'],
-    ['Node', 'Express', 'MongoDB']
-  ]
-  const [frontEnd, backEnd] = fullStack
-  
-  console.log(frontEnd)
-  console.log(backEnd) 
-  // ["HTML", "CSS", "JS", "React"]
-  // ["Node", "Express", "MongoDB"]
+  ['HTML', 'CSS', 'JS', 'React'],
+  ['Node', 'Express', 'MongoDB']
+]
+const [frontEnd, backEnd] = fullStack
+
+console.log(frontEnd)
+console.log(backEnd)
+// ["HTML", "CSS", "JS", "React"]
+// ["Node", "Express", "MongoDB"]
 
 
 //Dizideki değerlerden birini atlamak istersek ek virgül kullanırız. Virgül, söz konusu dizindeki değerin atlanmasına yardımcı olur:
@@ -55,3 +55,15 @@ let { width1, height1, area1, perimeter1 = 60 } = rectangle2
 
 console.log(width1, height1, area1, perimeter1) //20 10 200 60
 //Let us modify the object:width to 30 and perimeter to 80
+
+//Object parameter without destructuring - yapıyı bozmadan nesne parametresi kullanımı
+const rect = {
+  width: 20,
+  height:10
+}
+const calculatePerimeter = rectangle =>{
+  return 2 * (rectangle.width + rectangle.height)
+}
+console.log(calculatePerimeter(rect)) //60 
+//Destructuring kullanarak, calculatePerimeter fonksiyonunun içindeki rectangle.width ve rectangle.height gibi ifadeler yerine
+// doğrudan width ve height kullanabildik. Bu, kodun daha okunabilir ve kısa olmasını sağladı.
