@@ -59,11 +59,50 @@ console.log(width1, height1, area1, perimeter1) //20 10 200 60
 //Object parameter without destructuring - yapıyı bozmadan nesne parametresi kullanımı
 const rect = {
   width: 20,
-  height:10
+  height: 10
 }
-const calculatePerimeter = rectangle =>{
+const calculatePerimeter = rectangle => {
   return 2 * (rectangle.width + rectangle.height)
 }
 console.log(calculatePerimeter(rect)) //60 
 //Destructuring kullanarak, calculatePerimeter fonksiyonunun içindeki rectangle.width ve rectangle.height gibi ifadeler yerine
 // doğrudan width ve height kullanabildik. Bu, kodun daha okunabilir ve kısa olmasını sağladı.
+
+
+// ÖRNEK: Bu kodda, person nesnesi üzerinde işlem yaparak, kişiye ait bilgileri bir string olarak döndüren bir fonksiyon (getPersonInfo)
+// tanımlanmıştır. Kodda destructuring kullanılmamış ve nesnenin özelliklerine doğrudan obj.propertyName formatında erişilmiştir
+//nesne tanımlama:
+const person = { //Bu person nesnesi, kişinin adı, soyadı, yaşı, ülkesi, mesleği, becerileri ve konuştuğu diller gibi özellikleri içermektedir.
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  job: 'Instructor and Developer',
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB',
+    'Python',
+    'D3.js'
+  ],
+  languages: ['Amharic', 'English', 'Suomi(Finnish)']
+}
+//Bilgi Çıkaran Fonksiyon:
+const getPersonInfo = obj => { //Parametre: obj (nesne) olarak tanımlanan person nesnesi bu fonksiyona iletilir.
+  const skills = obj.skills //obj.skills, person nesnesinin skills dizisini alır.(BECERİLERİ ALIR)
+  const formattedSkills = skills.slice(0, -1).join(', ') //skills.slice(0, -1), skills dizisinin son elemanı hariç tüm elemanlarını alır, .join(', '), bu elemanları virgülle ayrılmış bir string haline getirir.
+  const languages = obj.languages //obj.languages, person nesnesinin languages dizisini alır.
+  const formattedLanguages = languages.slice(0, -1).join(', ')
+
+  //Kişi Bilgisi Oluşturma: personInfo değişkeni, obj içindeki ilgili değerleri kullanarak kişiye ait tüm bilgileri bir araya getirir.
+  personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. He is  ${obj.age} years old. He is an ${obj.job}. He teaches ${formattedSkills} and ${skills[skills.length - 1]}. He speaks ${formattedLanguages} and a little bit of ${languages[2]}.`
+
+  return personInfo //personInfo stringini döndürür.
+}
+console.log(getPersonInfo(person))
+//Asabeneh Yetayeh lives in Finland. He is  250 years old. He is an Instructor and Developer. He teaches HTML, CSS, JavaScript,
+//React, Redux, Node, MongoDB, Python and D3.js. He speaks Amharic, English and a little bit of Suomi(Finnish).
