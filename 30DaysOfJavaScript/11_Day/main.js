@@ -111,3 +111,29 @@ console.log(getPersonInfo(person))
 //SPREAD OR REST OPERATOR:
 //Bir dizinin yapısını bozduğumuzda geri kalan elemanları dizi olarak elde etmek için spread operatörünü(...) kullanırız.
 //Buna ek olarak dizi elemanlarını başka bir diziye yaymak için spread operatörünü kullanırız.
+const nums1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let [num4, num5, num6, ...rest1] = nums1
+console.log(num4, num5, num6)
+console.log(rest1)  //1 2 3 - ilk üç elemanı böldü diğerlerini diziye aktardı 
+//[4, 5, 6, 7, 8, 9, 10]  
+
+//Kopyalama sırasında nesneyi değiştirme 
+const user = {
+  name:'Asabeneh',
+  title:'Programmer',
+  country:'Finland',
+  city:'Helsinki'
+}
+
+const copiedUser = {...user, title:'instructor'}
+console.log(copiedUser) //{name: "Asabeneh", title: "instructor", country: "Finland", city: "Helsinki"}
+
+// Parametre olarak spread operatörünü kullanırsak, bir fonksiyonu çağırdığımızda aktarılan argüman bir diziye dönüşecektir:
+
+const sumAllNums = (...args) => {
+  console.log(args)
+}
+
+sumAllNums(1, 2, 3, 4, 5) //[1, 2, 3, 4, 5]
+
+ 
