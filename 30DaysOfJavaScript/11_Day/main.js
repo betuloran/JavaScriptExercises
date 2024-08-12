@@ -106,3 +106,8 @@ const getPersonInfo = obj => { //Parametre: obj (nesne) olarak tanımlanan perso
 console.log(getPersonInfo(person))
 //Asabeneh Yetayeh lives in Finland. He is  250 years old. He is an Instructor and Developer. He teaches HTML, CSS, JavaScript,
 //React, Redux, Node, MongoDB, Python and D3.js. He speaks Amharic, English and a little bit of Suomi(Finnish).
+
+
+//SPREAD OR REST OPERATOR:
+//Bir dizinin yapısını bozduğumuzda geri kalan elemanları dizi olarak elde etmek için spread operatörünü(...) kullanırız.
+//Buna ek olarak dizi elemanlarını başka bir diziye yaymak için spread operatörünü kullanırız.
