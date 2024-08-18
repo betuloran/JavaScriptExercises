@@ -18,6 +18,5 @@ let name = 'Betül', //name of a person
 
   console.log(firstName)  //Betül
   console.log(city)   //Kütahya
- 
   console.log(typeof 'Kütahya')  //çıktı: string
   console.log(typeof false) //çıktı: boolean

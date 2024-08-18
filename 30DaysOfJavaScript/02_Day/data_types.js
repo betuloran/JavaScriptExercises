@@ -1,26 +1,24 @@
 //ONE EXAMPLE
 let user1={
-    name:'tayfun',
-    surname:'erbilen'
+    name:'betül',
+    surname:'oran'
 }
-
 let user2={
-    name:'tayfun',
-    surname:'erbilen'
+    name:'betül',
+    surname:'oran'
 }
-
 console.log(user1==user2) //false 
 
 //TWO EXAMPLE 
-let firstName='tayfun'
-let lastName='erbilen'
+let firstName='betül'
+let lastName='oran'
 let space=' '
 
 // let fullName=firstName + space + lastName;
-// console.log(fullName) // tayfun erbilen 
+// console.log(fullName) // betül oran 
 
 let fullName=`${firstName} ${lastName}`
- console.log(fullName) // tayfun erbilen 
+ console.log(fullName) // betül oran 
 
 //THEREE EXAMPLE
 
