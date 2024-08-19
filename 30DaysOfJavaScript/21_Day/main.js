@@ -1,0 +1,1 @@
+//Zaten oluşturulmuş öğeye veya öğelere JavaScript kullanarak erişebiliriz. Öğelere erişmek veya öğeleri almak için farklı yöntemler kullanırız. Aşağıdaki kodda dört h1 öğesi vardır. h1 öğelerine erişmenin farklı yöntemlerini görelim.
