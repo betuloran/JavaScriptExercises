@@ -45,3 +45,16 @@ document.getElementById('id')
 let firstTitle = document.getElementById('first-title')//Burada, id değeri 'first-title' olan elementi seçiyoruz.
 console.log(firstTitle) // <h1>First Title</h1>
 //Seçilen element, firstTitle adlı bir JavaScript değişkenine atanıyor. Bu değişken, artık HTML'deki <h1 id="first-title">First Title</h1> elementini temsil eder.
+
+//querySelector yöntemlerini kullanarak öğeleri alma:
+// let firstTitle = document.querySelector('h1') // select the first available h1 element
+// let firstTitle = document.querySelector('#first-title') // select id with first-title
+// let firstTitle = document.querySelector('.title') // select the first available element with class title
+
+//querySelector: Belgenizde CSS seçiciyle eşleşen ilk öğeyi döndürür - querySelectorAll: Belgenizde CSS seçiciyle eşleşen tüm öğeleri döndürür.
+
+//Adding attribute - özellik ekleme
+//Bu kod parçacığı, bir HTML belgesinde tüm <h1> etiketlerini seçer ve belirli bir <h1> etiketi üzerinde sınıf (className) ve kimlik (id) atamaları yapar
+const titles = document.querySelectorAll('h1')
+titles[3].className = 'title'
+titles[3].id = 'fourth-title'
