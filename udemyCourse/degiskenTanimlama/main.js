@@ -13,3 +13,13 @@ nufus=1000;
 console.log(nufus) // Assignment to constant variable. - konsol hata verir, const ile değerler değiştirilemez
 
 //NOT: js, hata alınan koddan sonraki kodları okumaz. bu durum, önem verilmesi gereken bir noktadır.  
+
+
+
+
+
+
+
+
+
+
