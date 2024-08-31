@@ -8,7 +8,7 @@ console.log(email);
 
 let ad = "Betül";
 let soyad = "Oran";
-let adSoyad = ad + +soyad;
+let adSoyad = ad +" " +soyad;
 console.log(adSoyad);
 
 //Karakterleri Çekme
