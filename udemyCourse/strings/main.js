@@ -1,33 +1,33 @@
-console.log('Merhaba Dünya');
+console.log('Merhaba Dünya'); // Merhaba Dünya
 
-let email = "btlorn@hotmail.com";
+let email = "btlorn@hotmail.com"; 
 
-console.log(email);
+console.log(email); // btlorn@hotmail.com
 
 //Birleştirme
 
 let ad = "Betül";
 let soyad = "Oran";
 let adSoyad = ad +" " +soyad;
-console.log(adSoyad);
+console.log(adSoyad);// Betül Oran
 
 //Karakterleri Çekme
 
-console.log(adSoyad[2]);
+console.log(adSoyad[2]); //t
 
 //Kaç Karakter
 
 console.log(adSoyad.length);
-if (adSoyad.length > 0) {
+// if (adSoyad.length > 0) {
 
-}
+// }
 
 //Methodlar
 
-console.log(adSoyad.toUpperCase());
+console.log(adSoyad.toUpperCase()); //  BETÜL ORAN
 let kucukAdSoyad = adSoyad.toLocaleLowerCase();
-console.log(kucukAdSoyad);
-console.log(adSoyad);
+console.log(kucukAdSoyad); //betül oran
+console.log(adSoyad); //Betül Oran
 
 let index = adSoyad.indexOf('B');
-console.log("B nin bulundugu index:" + index);
+console.log("B nin bulundugu index:" + index); // B nin bulundugu index:0
