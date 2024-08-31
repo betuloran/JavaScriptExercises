@@ -21,5 +21,3 @@ console.log(nufus) // Assignment to constant variable. - konsol hata verir, cons
 
 
 
-
-
