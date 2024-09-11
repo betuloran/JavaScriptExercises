@@ -3,11 +3,11 @@
 // const hata=document.querySelector('div.error');
 // console.log(hata);
 
-const hatalar=document.querySelectorAll('p');
+const frameworks=document.querySelectorAll('p');
 
-console.log(hatalar);
-console.log(hatalar[1]);
+console.log(frameworks);
+console.log(frameworks[1]);
 
-hatalar.forEach(hata =>{
+frameworks.forEach(hata =>{
 console.log(hata);
 })
