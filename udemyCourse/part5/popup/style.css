@@ -23,6 +23,13 @@ input:focus{
     border: none;
 }
 
+.success{
+    border: 1px solid green;
+}
+.error{
+    border: 1px solid red;
+}
+
 .kutu {
     width: 100%;
     text-align: center;
