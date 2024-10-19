@@ -1,9 +1,11 @@
 
 .text-white {
     margin:0 80px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 
 }
-.questions-form p {
-    margin-top: 20px;
+
+.questions-form .first-paragraph {
+    margin-top: 20px !important;
 }
