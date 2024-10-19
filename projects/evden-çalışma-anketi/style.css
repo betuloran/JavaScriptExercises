@@ -1,38 +1,6 @@
-#questions {
-    background-color: rgb(178, 175, 175);
-    padding: 50px;
-    margin: 20px 0;
-    height: 500px;
-}
 
 .text-white {
     margin:0 80px;
     padding-bottom: 30px;
 
-}
-
-.text-white p:not(:first-child) {
-    margin-top: 10px;
-}
-
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: white;
-    width: 80px;
-    height: 35px;
-}
-
-.button p {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button:hover {
-    background-color: rgb(196, 237, 237);
 }
