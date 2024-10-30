@@ -1,5 +1,6 @@
 const nextIcon = document.querySelector('.next');
 const prevIcon = document.querySelector('.prev');
+
 const imageContainer = document.querySelector('.imageContainer');
 const imgs = document.querySelectorAll('img');
 
@@ -8,14 +9,14 @@ let timeout;
 
 prevIcon.addEventListener('click', () => {
   currentImg--;
-  clearTimeout(timeout);// Otomatik kaydırmayı sıfırlar
-  updateImg(); // Yeni görseli gösterir ve otomatik kaydırmayı yeniden başlatır
+  clearTimeout(timeout);
+  updateImg();
 });
 
 nextIcon.addEventListener('click', () => {
   currentImg++;
-  clearTimeout(timeout);
-  updateImg();
+  clearTimeout(timeout);// Otomatik kaydırmayı sıfırlar
+  updateImg(); // Yeni görseli gösterir ve otomatik kaydırmayı yeniden başlatır
 });
 
 function updateImg() {
@@ -24,12 +25,11 @@ function updateImg() {
   } else if (currentImg < 1) {
     currentImg = imgs.length;
   }
-// (currentImg - 1) * 700, geçerli görselin konumuna göre kaydırma miktarını belirler. (her görselin genişliği 700 piksel olarak varsayıldı)
   imageContainer.style.transform = `translateX(-${(currentImg - 1) * 700}px)`;
   timeout = setTimeout(() => {
     currentImg++;
-    updateImg();
+    updateImg(); // ilk görsel otomatik olarak görüntülenir ve zamanlayıcı başlatılır
   }, 4000);
 }
 
-updateImg(); // ilk görsel otomatik olarak görüntülenir ve zamanlayıcı başlatılır.
+updateImg();
