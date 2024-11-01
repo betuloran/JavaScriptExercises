@@ -25,8 +25,10 @@ https://github.com/user-attachments/assets/4c05152b-ccda-4bae-9f02-ef606586168c
 #### When the user types in the textarea, the keyup event triggers the updateCounter function. The number of characters in the textarea is displayed in the totalCounter element. The remaining character count (based on the maximum limit set by maxlength) is shown in the remainingCounter element.
 https://github.com/user-attachments/assets/5f7a9db1-8ef8-4b43-879b-4a7cb29711e7
 
-
-
+## Six Project 💻
+>### How does it work?
+#### When the menu icon is clicked, the JavaScript code toggles the showSidebar class on the sidebar, making it slide into view. Clicking the close (X) button inside the sidebar removes the showSidebar class, hiding the sidebar again. This provides a simple and effective way to show or hide the sidebar with smooth animations.
+https://github.com/user-attachments/assets/9a35d66d-e4d9-4609-bfab-830c774da4de
 
 
 
