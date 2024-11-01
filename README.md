@@ -20,6 +20,13 @@ https://github.com/user-attachments/assets/11e370ca-6dde-484d-9176-dc8fc5384f71
 #### This animation works by using JavaScript to increment a number from 0 to 100, updating the displayed percentage and the width of the loading bar in each step.
 https://github.com/user-attachments/assets/4c05152b-ccda-4bae-9f02-ef606586168c
 
+## Five Project 💻
+>### How does it work?
+#### When the user types in the textarea, the keyup event triggers the updateCounter function. The number of characters in the textarea is displayed in the totalCounter element. The remaining character count (based on the maximum limit set by maxlength) is shown in the remainingCounter element.
+https://github.com/user-attachments/assets/5f7a9db1-8ef8-4b43-879b-4a7cb29711e7
+
+
+
 
 
 
