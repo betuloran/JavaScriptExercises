@@ -1,4 +1,4 @@
-//üzerinde işlem yapacağımız tüm işlevleri çağırıyoruz  
+//üzerinde işlem yapacağımız tüm işlevleri çağırıyoruz:
 const currencyFirst=document.getElementById('currencyFirst')
 const currencySecond=document.getElementById('currencySecond')
 const count=document.getElementById('count')
