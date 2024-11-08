@@ -35,7 +35,10 @@ https://github.com/user-attachments/assets/9a35d66d-e4d9-4609-bfab-830c774da4de
 #### updateRate function fetches the latest exchange rate for the selected currency. When the user selects a different currency or changes the amount, the updateRate function recalculates the equivalent value in the target currency. The exchange rate and calculated amount are updated instantly in the display areas, giving the user up-to-date conversion information.
 https://github.com/user-attachments/assets/dbffe86a-1787-4a57-9cfe-624e0ec4e0c6
 
-
+## Eighth Project 💻
+>### How does it work?
+#### When the user clicks on a .boxButton, it toggles the active class on relevant elements inside the box. The plus and minus icons toggle between showing and hiding. The .box-text element’s active class toggles, making the content visible or hidden.
+https://github.com/user-attachments/assets/233447a1-729a-40ac-927b-3b0fc63340b4
 
 
 
