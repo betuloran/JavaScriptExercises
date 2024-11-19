@@ -40,5 +40,10 @@ https://github.com/user-attachments/assets/dbffe86a-1787-4a57-9cfe-624e0ec4e0c6
 #### When the user clicks on a .boxButton, it toggles the active class on relevant elements inside the box. The plus and minus icons toggle between showing and hiding. The .box-text element’s active class toggles, making the content visible or hidden.
 https://github.com/user-attachments/assets/233447a1-729a-40ac-927b-3b0fc63340b4
 
+## Ninth Project 💻
+>### How does it work?
+#### The user enters a value in any temperature unit (Celsius, Fahrenheit or Kelvin). The calculateTemp function detects which input field the value is entered in and calculates the other two units using the appropriate mathematical formulas. The calculated temperature values are automatically printed in the corresponding input fields. This process is repeated every time the user enters a new value.
+https://github.com/user-attachments/assets/12a6196e-5069-4934-b2dc-2f5b5a2a2c03
+
 
 
