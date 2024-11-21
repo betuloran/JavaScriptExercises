@@ -45,5 +45,7 @@ https://github.com/user-attachments/assets/233447a1-729a-40ac-927b-3b0fc63340b4
 #### The user enters a value in any temperature unit (Celsius, Fahrenheit or Kelvin). The calculateTemp function detects which input field the value is entered in and calculates the other two units using the appropriate mathematical formulas. The calculated temperature values are automatically printed in the corresponding input fields. This process is repeated every time the user enters a new value.
 https://github.com/user-attachments/assets/12a6196e-5069-4934-b2dc-2f5b5a2a2c03
 
-
-
+## Tenth Project 💻
+>### How does it work?
+#### When the menu-bars button is clicked, the navigation menu toggles between open and closed states. The overlay slides in or out using CSS animations controlled by JavaScript. Navigation items also animate individually to enhance the user experience, and clicking on any item closes the menu.
+https://github.com/user-attachments/assets/2be8e443-ab5a-4074-aa27-fc9701e88237
